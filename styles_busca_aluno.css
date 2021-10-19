@@ -1,0 +1,24 @@
+.buscar_aluno{
+    max-width: 30%;
+    margin: auto;
+    
+}
+
+form{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+input{
+    width: 50%;
+    margin: auto;
+}
+label{
+    width: 100%;
+}
+
+button{
+    margin-top: 20px;
+    width: 50%;
+}
