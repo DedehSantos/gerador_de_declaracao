@@ -19,7 +19,7 @@ while($linha = mysqli_fetch_array($result)){
 if($conn){
     //echo 'conexao ok';
 }else{
-    echo 'conexao falhou' ;
+    echo 'conexao falhou';
 }
 
 $unixTime = time();
