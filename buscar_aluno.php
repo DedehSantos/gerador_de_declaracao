@@ -65,7 +65,7 @@ $formattedTime = $time->format('d/m/Y H:i:s');
           <input type="text "value="<?php echo "$turma";?>"  name="turma" >
           <label for="" >Curso:</label>
           <input type="text" value="<?php echo "$curso";?>" name="curso"  >
-          <button type="submt" class="btn btn-success"> ENVIAR</button>
+          <button type="submt" class="btn btn-success"> GERAR PDF</button>
       </form>
 
 
