@@ -28,6 +28,8 @@
 mysqli_set_charset($conn, 'utf8');
      
   
+
+
 if($assinatura == "Patricia Nogueira de Sousa" ){
    
    $cargo = "Secretaria Escolar";
