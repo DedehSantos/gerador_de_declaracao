@@ -32,15 +32,15 @@ mysqli_set_charset($conn, 'utf8');
 
 if($assinatura == "Patricia Nogueira de Sousa" ){
    
-   $cargo = "Secretaria Escolar";
+   $cargo = "(Secretária Escolar)";
 }
 elseif($assinatura == "Erica Santana de Souza" ){
    
-   $cargo = "Gestora Escolar";
+   $cargo = "(Gestora Escolar)";
 }
 elseif($assinatura == "Maria Gorette de Oliveira Emiliano" ){
    
-   $cargo = "Cordenação Pedagógica";
+   $cargo = "(Coordenação Pedagógica)";
 }
  
 

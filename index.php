@@ -20,7 +20,7 @@
         <h4>GERAR DECLARAÇÂO</h4>
         <form class="form" action="buscar_aluno.php" method="GET">
         
-            <input type="text" name="busca">
+            <input type="text" name="busca" autofocus placeholder="Digite a Matrícula">
             <button class="btn btn-success" name="">Buscar Aluno</button>
         </form>
       
