@@ -1,7 +1,3 @@
-<?php
-include_once ("conexao.php");
-?>
-
 
 <!doctype html>
 <html lang="en">
@@ -13,17 +9,22 @@ include_once ("conexao.php");
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles_busca_aluno.css"> 
+    <link rel="stylesheet" href="css/index-styles.css"> 
 </head>
   <body>
-      <div class="">
-        <h1>GERAR DECLARAÇÂO</h1>
-        <form action="buscar_aluno.php" method="GET">
-            <label for="">DIGITTE A MATRICULA DO ALUNO</label>
+  <video autoplay muted loop>
+            <source src="./videos/video.mp4" type="video/mp4">
+        </video>
+      <div class="tela_inicial">
+     
+        <h4>GERAR DECLARAÇÂO</h4>
+        <form class="form" action="buscar_aluno.php" method="GET">
+        
             <input type="text" name="busca">
             <button class="btn btn-success" name="">Buscar Aluno</button>
         </form>
-
+      
+        
       </div>
      
 

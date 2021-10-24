@@ -1,8 +1,8 @@
-<?php include_once "conexao.php";?>
+
+
 <?php
-  
-  
-  
+
+
 //incluir a conexao
 include_once("conexao.php");
 
@@ -26,51 +26,69 @@ if($conn){
     echo 'conexao falhou';
 }
 
-$unixTime = time();
-$timeZone = new \DateTimeZone('America/Sao_Paulo');
-
-$time = new \DateTime();
-$time->setTimestamp($unixTime)->setTimezone($timeZone);
-
-$formattedTime = $time->format('d/m/Y H:i:s');
-
-
+setlocale(LC_TIME, 'portuguese'); 
+date_default_timezone_set('America/Sao_Paulo');
+$date = date('Y-m-d');
+strftime("%d de %B de %Y", strtotime($date));
+$formattedTime = strftime(" %d de %B de %Y", strtotime($date));
 ?>
-
 
 
 
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>BUSCAR ALUNO</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles-buscar.css">
 </head>
   <body>
+    <img class="img-fluid" src="img/Pessoa-tendo-organizacao-nos-documentos-scaled.jpg" alt="">
    
-      <form action="gerar_pdf.php" name="busca" method="GET">
-          <label for="">Nome:</label> <br>
+      <form action="tabela.php" name="busca" method="GET" class="form-busca-aluno" >
+          <label >Nome:</label> <br>
           <input type="text" value="<?php echo "$nome";?>"  name="nome"> <br>
-          <label for="">Matricula:</label><br>
-          <input type="text" value="<?php echo "$matricula";?>" name="busca" > <br>
-          <label for="" >Ano:</label>
-          <input type="text"value=" <?php echo $formattedTime; ?> " name="ano">
-          <label for="" >Serie:</label>
-          <input type="text "value="<?php echo "$turma";?>"  name="turma" >
-          <label for="" >Curso:</label>
-          <input type="text" value="<?php echo "$curso";?>" name="curso"  >
-          <button type="submt" class="btn btn-success"> GERAR PDF</button>
+          <label >Matricula:</label><br>
+          <input type="text" value="<?php echo "$matricula";?>" name="matricula" > <br>
+          <label f >Ano:</label>  <br>
+          <input type="text"value=" <?php echo $formattedTime; ?> " name="data">  <br>
+          <label >Serie:</label>  <br>
+          <input type="text "value="<?php echo "$turma";?>"  name="turma" > <br>
+          <label >Curso:</label>  <br>
+          <input type="text" value="<?php echo "$curso";?>" name="curso"  > <br> 
+          <div class="quem-assina">
+          <div class="form-check">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="assinatura" value="Erica Santana de Souza"checked >Erica Santana de Sousa
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="assinatura" value="Patricia Nogueira de Sousa">Patricia Nogueira de Sousa
+  </label>
+</div>
+<div class="form-check">
+  <label class="form-check-label">
+    <input type="radio" class="form-check-input" name="assinatura" value="Maria Gorette de Oliveira Emiliano" >Maria Gorette de Oliveira Emiliano
+</div>
+        
+
+            </div>
+          
+            
+        <button type="submt" class="btn btn-success"> CONFIRMAR DADOS</button>
+
+          </div>
+           
       </form>
 
 
-
-     
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
