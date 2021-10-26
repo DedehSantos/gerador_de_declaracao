@@ -1,0 +1,48 @@
+*{
+    margin: auto;
+    padding: 0;
+    text-decoration: none;
+    max-width: 95%;
+    font-size: 28px;
+  
+
+}
+
+.container{
+    margin: auto;
+    padding: 0;
+    
+}
+img{
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+
+.titulo{
+    text-align: center;
+    margin: 200px 0px 200px;
+}
+
+.cidade_data{
+  margin-top: 200px;
+  text-align: right;
+}
+
+.linha_da_assinatura{
+    border-top: 1px solid black;  
+   margin-top: 200px;
+   width: 400px;
+    margin-bottom: 0;
+    height: 0px;
+    padding: 0;
+}
+.assinatura{
+    text-align: center;
+    margin-top: 0px;
+    
+}
+
+.texto_da_declaracao{
+    text-align: justify;
+}

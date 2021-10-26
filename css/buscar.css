@@ -1,0 +1,44 @@
+
+    *{
+        margin: 0;
+        margin: 0;
+        
+    }
+
+    .img-fluid{
+        position: absolute;
+        z-index: 1;
+    }
+
+
+form{
+    width: 400px;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(131, 7, 247, 0.432);
+    border-radius: 20px 2px;
+   margin-left: 750px;
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.input-busca{
+  width: 96%; 
+  text-align: center;   
+
+
+}
+
+.form-check{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.btn-success{
+    background-color: black;
+    border: none;
+    width: 95%;
+}
