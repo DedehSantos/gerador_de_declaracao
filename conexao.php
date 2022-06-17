@@ -4,7 +4,7 @@ $servidor = "localhost";
 $dbusuario = "root";
 $dbsenha = "";
 //inserir o nome do banco de dados
-$dbname = "ecit_lista_alunos";
+$dbname = "sistema_declaracao";
 $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
  
 if ($conn){

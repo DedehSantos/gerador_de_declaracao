@@ -10,7 +10,7 @@ $busca = $_GET['busca'];
 $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
 mysqli_set_charset($conn, 'utf8');
 //inserir o nome da tabela onde esta tblista_de_alunos e onde tem matricula, inserir o nome do que quer buscar                   
- $sql = " SELECT * FROM tblista_de_alunos WHERE matricula LIKE '%$busca%' ";
+ $sql = " SELECT * FROM lista_de_alunos_2022 WHERE matricula = '$busca' ";
 $result = mysqli_query($conn, $sql);
 $conta = mysqli_num_rows($result);
 while($linha = mysqli_fetch_array($result)){
@@ -64,7 +64,7 @@ $formattedTime = strftime(" %d de %B de %Y", strtotime($date));
           <div class="quem-assina">
           <div class="form-check">
       <label class="form-check-label">
-         <input type="radio" class="form-check-input" name="assinatura" value="Erica Santana de Souza"checked >Erica Santana de Sousa
+         <input type="radio" class="form-check-input" name="assinatura" value="Érica Santana de Souza"checked >Érica Santana de Sousa
      </label>
     </div>
       <div class="form-check">

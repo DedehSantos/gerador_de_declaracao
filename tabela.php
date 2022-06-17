@@ -34,7 +34,7 @@ if($assinatura == "Patricia Nogueira de Sousa" ){
    
    $cargo = "(Secretária Escolar)";
 }
-elseif($assinatura == "Erica Santana de Souza" ){
+elseif($assinatura == "Érica Santana de Souza" ){
    
    $cargo = "(Gestora Escolar)";
 }
@@ -57,10 +57,9 @@ elseif($assinatura == "Maria Gorette de Oliveira Emiliano" ){
     
       <div class="texto_da_declaracao">
 
-          <p>Declaro para os devidos fins que, o (a) aluno (a) 	
+          <p>Declaro para os devidos fins que, o(a) aluno(a) 	
           <b> <?php echo $nome ?></b>, 
-          encontra-se matriculada nesta instituição de ensino sob nº de 
-          matricula: <b> <?php echo $matricula ?></b> na <b> Escola Cidadã Integral 
+          possui matrícula ativa no presente ano e consta como regulamente matriculado(a)  </b> na <b> Escola Cidadã Integral 
           Técnica Professor Bráulio Maia Júnior </b> de INEP <b>25130331 </b> e CNPJ: <b>32.432.483/0001-0</b>, na 
           <b> <?php echo $turma ?></b> 
           do ensino médio no curso de 
